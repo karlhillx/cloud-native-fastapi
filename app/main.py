@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-app = FastAPI(title="Cloud-Native FastAPI Example", version="0.1.0")
+# Bump application version to reflect recent dependency and config updates
+app = FastAPI(title="Cloud-Native FastAPI Example", version="0.1.1")
 
 class HealthResponse(BaseModel):
     status: str
